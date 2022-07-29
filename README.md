@@ -59,7 +59,7 @@ CONTAINER ID   IMAGE                               COMMAND                  CREA
 Once Jenkins starts up the first time, it automatically creates an Administrator password that we will need to log in. Run the following command to retrieve the admin password:
 
 ```bash
-docker exec lacework_jenkins_1 cat /var/jenkins_home/secrets/initialAdminPassword
+docker exec local-jenkins-environment_jenkins_1 cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
 Open an web browser and go to [http://localhost:8080](http://localhost:8080) to launch Jenkins.
